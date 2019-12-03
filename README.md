@@ -1,5 +1,5 @@
 
-# Predictive Model for US Domestic Flights Delays #
+# US Domestic Flights Delays Analysis #
 ***
 ### *Capstone Project for Data Science Immersive Course at GENERAL ASSEMBLY, NYC* ###
 ***
