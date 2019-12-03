@@ -68,7 +68,7 @@ The purpose of this separate notebook is to create a dataset to be universally u
 
 In order to do so I looked at correlations between our remaining features, as well as dealt with imbalanced classes problem for classification models. To avoid inbalanced clasees with our future classification models I chose to construct my modeling dataset in a way that the positive and negative classes are balanced as 1:1. I randomly pulled observations out of our positive (flight on time) class - and a number of these observations will be equal to the number of tweets in our negative (flight delayed) class.
 
-### 5 Logistic Regression Classifier###
+### 5 Logistic Regression Classifier ###
 
 Fitting a Logistic Regression Classifier on flights data is a classic approach to classifications problems. 
 
