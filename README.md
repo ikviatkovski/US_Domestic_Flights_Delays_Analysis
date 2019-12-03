@@ -1,12 +1,17 @@
-# GENERAL ASSEMBLY NYC #
+
+# Predictive Model for US Domestic Flights Delays #
 ***
-## Data Science Immersive Course ##
-***
-## Capstone Project ##
-***
-# Project's Name #
+### *Capstone Project for Data Science Immersive Course at GENERAL ASSEMBLY, NYC* ###
 ***
 ## Problem Statement ##
+
+Nowadays flight delays have become a part of our daily lives. As much as we take them as an integral part of traveling, we would naturally like to avoid them. But eliminating flight delays entirely is not possible due to quite a large stochastic element of modern airline business - volumes increase every year with more and more planes  taking off and landing every minute, airport infrastructure is slow to adjust and costly to inprove, weather and human factors impact on-time flight performance at random, security issues are on the rise, just to name a few.
+
+But even if we cannot eliminate flight delays entirely, could we possibly try minimizing their negative impact? No one raises a brow when a flight is just slightly late, making it to the gate still on time for even the tightest connections, but what if that delay becomes lengthier? It's an industry standard now in the US to consider the flight arriving at its disembarcation position no later than 15 minutes after it's scheduled time as still 'on-time'. 
+
+According to Federal Aviation Authority's estimate, the annual costs of delays (direct cost to airlines and passengers, lost demand, and indirect costs)  in 2018 was around USD28 billion. Indirect effect of flight delays is imposed customer costs, as well as lost productivity, wages and goodwill. According to one of the industry's watchdogs Airline for America, "In 2018, the average cost of aircraft block (taxi plus airborne) time for U.S. passenger airlines was USD74.20 per minute, 9 percent more than in 2017. Fuel costs, the largest line item, rose 27 percent to USD27.01 per minute. Crew costs, the second largest line item, rose 3 percent to USD23.35 per minute."
+
+Could we possibly try to analyze historical flight data to understand the reasons for lengthier delays and try to predict such occurencies and take proactive measures minimizing their negative impact? 
 ***
 ## Project Files ##
 
@@ -24,14 +29,14 @@ The project consists of a number of separate Jupyter Notebooks listed in the ord
 Datasets and auxillary data files used for the Project and generated through the Project exceed any available external storage and are stored locally only.
 
 Auxillary images generated for the Project in a separated Jupyter Notebook __[Auxillary Images](http://localhost:8888/notebooks/code/Auxillary%20Images.ipynb)__ are available as *.png files at the __[images](http://localhost:8888/tree/images)__ folder in the Projects repository.
-
+***
 ## Data Dictionary ##
 
 Initial datasets used for the Project were obtained in the [Data Library of Bureau of Tranportation Statistics](https://www.transtats.bts.gov/Databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0) as a part of US Departament of Transportation and US Federal Aviation Authority Open Data Project. 
 Flight performance information is available for download per monthly reporting periods with possibility to pre-select parameters of interest.
 A data dictionary for all parameters is available at [Data Dictionary](https://www.transtats.bts.gov/Tables.asp?DB_ID=120&DB_Name=Airline%20On-Time%20Performance%20Data&DB_Short_Name=On-Time) where all the fields and industry-specific terminology is explained in the sections corresponding to **"Reporting Carrier On-Time Performance"** section.
 Throuh the Project flow some additional explanations are given wherever necessary.
-
+***
 ## Executive Summary ##
 
 In order to analyse flight delays pattern I decided to pick the most recent period of Quarter 4, 2018. The last three months of each year are quite representative in terms of domestic travel - October is quite diverse weather-wise and includes school vacations nearly everywhere, November is even diverser weather-wise with increased winter storm disruptions and it also includes one of the highest travel period - Thanksgiving holidays. December is traditionally the most complicated month as weather always brings unpleasant surprises, it includes Christmas as another school vacations time everywhere in the US and another busiest time across the airports. 
