@@ -13,18 +13,16 @@ According to Federal Aviation Authority's estimate, the annual costs of delays (
 
 Could we possibly try to analyze historical flight data to understand the reasons for lengthier delays and try to predict such occurencies and take proactive measures minimizing their negative impact? 
 ***
-## Project Files ##
+roject consists of a number of separate Jupyter Notebooks listed in the order of their workflow sequence and available at the __[code](http://localhost:8888/tree/PROJECTS/cstone/code)__ folder in the Project repository:
 
-The project consists of a number of separate Jupyter Notebooks listed in the order of their workflow sequence and available at the __[code](http://localhost:8888/tree/PROJECTS/cstone/code)__ folder in the Project repository:
-
-1. __[1 Importing Data](http://localhost:8888/notebooks/PROJECTS/cstone/code/1%20Importing%20data.ipynb)__ - a notebook with initial data import from internet databases
-2. __[2 Cleaning](http://localhost:8888/notebooks/PROJECTS/cstone/code/2%20Cleaning.ipynb)__ - a notebook with the code for data cleaning and some insight on the initial data structure
-3. __[3 EDA](http://localhost:8888/notebooks/PROJECTS/cstone/code/3%20EDA.ipynb)__ - a notebook with the extensive Exploratory Data Analysis
-4. __[4 Pre-Processing](http://localhost:8888/notebooks/PROJECTS/cstone/code/4%20Pre-Processing.ipynb#Baseline-Model)__ - a notebook with data preparation for modeling and setting the Baseline model for classification
-5. __[5 Modeling Logistic Regression](http://localhost:8888/notebooks/PROJECTS/cstone/code/5%20Modeling%20Logistic%20Regression.ipynb#Importing-Data-and-Initial-Checks)__ - a notebook with Logistic Regression Classification model
-6. __[6 Modeling Decision Trees](http://localhost:8888/notebooks/PROJECTS/cstone/code/6%20Modeling%20Decision%20Trees.ipynb)__ - a notebook with Decision Trees family models
-7. __[7 Modeling FFNN Classifier](http://localhost:8888/notebooks/PROJECTS/cstone/code/7%20Modeling%20FFNN%20%20Classifier.ipynb)__ - a notebook with Forwared Feeding Neural Network Classification model
-8. __[8 Modeling FFNN Regressor](http://localhost:8888/notebooks/PROJECTS/cstone/code/8%20Modeling%20FFNN%20Regressor.ipynb)__ - a notebook with Forwared Feeding Neural Network Regression model
+* __[1 Importing Data](http://localhost:8888/notebooks/PROJECTS/cstone/code/1%20Importing%20data.ipynb)__ - a notebook with initial data import from internet databases
+* __[2 Cleaning](http://localhost:8888/notebooks/PROJECTS/cstone/code/2%20Cleaning.ipynb)__ - a notebook with the code for data cleaning and some insight on the initial data structure
+* __[3 EDA](http://localhost:8888/notebooks/PROJECTS/cstone/code/3%20EDA.ipynb)__ - a notebook with the extensive Exploratory Data Analysis
+* __[4 Pre-Processing](http://localhost:8888/notebooks/PROJECTS/cstone/code/4%20Pre-Processing.ipynb#Baseline-Model)__ - a notebook with data preparation for modeling and setting the Baseline model for classification
+* __[5 Modeling Logistic Regression](http://localhost:8888/notebooks/PROJECTS/cstone/code/5%20Modeling%20Logistic%20Regression.ipynb#Importing-Data-and-Initial-Checks)__ - a notebook with Logistic Regression Classification model
+* __[6 Modeling Decision Trees](http://localhost:8888/notebooks/PROJECTS/cstone/code/6%20Modeling%20Decision%20Trees.ipynb)__ - a notebook with Decision Trees family models
+* __[7 Modeling FFNN Classifier](http://localhost:8888/notebooks/PROJECTS/cstone/code/7%20Modeling%20FFNN%20%20Classifier.ipynb)__ - a notebook with Forwared Feeding Neural Network Classification model
+* __[8 Modeling FFNN Regressor](http://localhost:8888/notebooks/PROJECTS/cstone/code/8%20Modeling%20FFNN%20Regressor.ipynb)__ - a notebook with Forwared Feeding Neural Network Regression model
 
 Datasets and auxillary data files used for the Project and generated through the Project exceed any available external storage and are stored locally only.
 
