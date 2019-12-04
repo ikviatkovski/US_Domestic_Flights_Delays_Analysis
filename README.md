@@ -11,7 +11,7 @@ But even if we cannot eliminate flight delays entirely, we could possibly try mi
 
 According to Federal Aviation Authority's estimate, the annual costs of delays (direct cost to airlines and passengers, lost demand, and indirect costs)  in 2018 was around USD28 billion. Indirect effect of flight delays is imposed customer costs, as well as lost productivity, wages and goodwill. According to one of the industry's watchdogs Airline for America, *”In 2018, the average cost of aircraft block (taxi plus airborne) time for U.S. passenger airlines was USD74.20 per minute, 9 percent more than in 2017. Fuel costs, the largest line item, rose 27 percent to USD27.01 per minute. Crew costs, the second largest line item, rose 3 percent to USD23.35 per minute.”*
 
-Could we possibly try to analyze historical flight data to understand the reasons for lengthier delays and try to predict such occurrences and take proactive measures minimizing their negative impact? 
+**Could we possibly try to analyze historical flight data to understand the reasons for lengthier delays and try to predict such occurrences in order to take proactive measures minimizing their negative impact?**
 ***
 
 ## Project Files ##
