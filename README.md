@@ -26,7 +26,7 @@ roject consists of a number of separate Jupyter Notebooks listed in the order of
 
 Datasets and auxillary data files used for the Project and generated through the Project exceed any available external storage and are stored locally only.
 
-[AUX](http://localhost:8888/tree/PROJECTS/cstone/Auxiliary%20Materials) folder contains a Jupyter notebook [Auxilliary Code](http://localhost:8888/notebooks/PROJECTS/cstone/Auxiliary%20Materials/Auxiliary%20Code.ipynb) used for visuals creation on features importance vizializations, and a mix of auxilliary DataFrames created through the process, as well as png files of all vizualizations for the Project presentation. 
+[AUX](http://localhost:8888/tree/PROJECTS/cstone/AUX) folder contains a Jupyter notebook [Auxilliary Code](http://localhost:8888/notebooks/PROJECTS/cstone/AUX/Auxiliary%20Code.ipynb) used for visuals creation on features importance vizializations, and a mix of auxilliary DataFrames created through the process, as well as png files of all vizualizations for the Project presentation. 
 ***
 ## Data Dictionary ##
 
