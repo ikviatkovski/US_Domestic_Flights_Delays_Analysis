@@ -26,14 +26,14 @@ roject consists of a number of separate Jupyter Notebooks listed in the order of
 
 Datasets and auxillary data files used for the Project and generated through the Project exceed any available external storage and are stored locally only.
 
-Auxillary images generated for the Project in a separated Jupyter Notebook __[Auxillary Images](http://localhost:8888/notebooks/code/Auxillary%20Images.ipynb)__ are available as *.png files at the __[images](http://localhost:8888/tree/images)__ folder in the Projects repository.
+[AUX](http://localhost:8888/tree/PROJECTS/cstone/Auxiliary%20Materials) folder contains a Jupyter notebook [Auxilliary Code](http://localhost:8888/notebooks/PROJECTS/cstone/Auxiliary%20Materials/Auxiliary%20Code.ipynb) used for visuals creation on features importance vizializations, and a mix of auxilliary DataFrames created through the process, as well as png files of all vizualizations for the Project presentation. 
 ***
 ## Data Dictionary ##
 
 Initial datasets used for the Project were obtained in the [Data Library of Bureau of Tranportation Statistics](https://www.transtats.bts.gov/Databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0) as a part of US Departament of Transportation and US Federal Aviation Authority Open Data Project. 
 Flight performance information is available for download per monthly reporting periods with possibility to pre-select parameters of interest.
 A data dictionary for all parameters is available at [Data Dictionary](https://www.transtats.bts.gov/Tables.asp?DB_ID=120&DB_Name=Airline%20On-Time%20Performance%20Data&DB_Short_Name=On-Time) where all the fields and industry-specific terminology is explained in the sections corresponding to **"Reporting Carrier On-Time Performance"** section.
-Throuh the Project flow some additional explanations are given wherever necessary.
+Through the Project flow some additional explanations are given wherever necessary.
 ***
 ## Executive Summary ##
 
@@ -72,34 +72,37 @@ In order to do so I looked at correlations between our remaining features, as we
 
 Fitting a Logistic Regression Classifier on flights data is a classic approach to classifications problems. 
 
-In my case it resulted in default model performing with accuracy of slightly above 0.57 which is just a light improvement for the Baseline model for balanced classed accuracy of 0.5.
+In my case it resulted in default model performing with accuracy of slightly above 0.59 which is just a light improvement for the Baseline model for balanced classed accuracy of 0.5.
 
 I attempted hyperparameters tuning and achieved just a very small, nearly negligible accuracy improvement.
 
 ### 6 Decision Trees ###
 
-A default Decision Tree Classifier performed with accuracy of 1.0 on a training set, but just with 0.61 on a testing set. A Bagging Classifier showed similar results with training set accuracy of 0.98 and just 0.64 on a testing sets. Both models were showing signs of being severely overfit.
+A default Decision Tree Classifier performed with accuracy of 1.0 on a training set, but just with 0.62 on a testing set. A Bagging Classifier showed similar results with training set accuracy of 0.98 and just 0.66 on a testing sets. Both models were showing signs of being severely overfit.
 
-A default Random Forest model showed signs of being very overfit performing with the accuracy of 0.99 on a train-set and 0.62 on a test-set. Hyperparameters grid-search allowed me to get rid of overfitting at a price of having my best grid-searched model accuracy of 0.59 on a training set and 0.58 on a testing set. This is not a significant improvement with both Logistic Regression and Baseline models.
+A default Random Forest model showed signs of being very overfit performing with the accuracy of 0.99 on a train-set and 0.64 on a test-set. Hyperparameters grid-search allowed me to get rid of overfitting at a price of having my best grid-searched model accuracy of 0.60 on a training set and 0.59 on a testing set. This is not a significant improvement with both tuned Logistic Regression and Baseline models.
 
-Fitting an AdaBoost Classifier with my best grid-searched Random Forest model as a base estimator permitted me to achieve accuracy of 0.68 on a training set and 0.63 on a testing set.
+Fitting an AdaBoost Classifier with my best grid-searched Random Forest model as a base estimator permitted me to achieve accuracy of 0.70 on a training set and 0.65 on a testing set.The model is slightly overfit. 
 
-Applying XGBoost technique resulted in accuracy of 0.64 on a training set and 0.63 on a testing set. 
+Applying XGBoost technique resulted in accuracy of 0.65 on a training set and 0.64 on a testing set. Using GridSearch for its hyperparameters tuning I achieved nearly the same results at cost of nearly a whole night of computations.
 
-Hence, AdaBoost Classifier using as a base estimator an optimized Random Forest model showed the highest accuracy scores both on training and testing data.
+Hence, AdaBoost Classifier using as a base estimator an optimized Random Forest model showed the highest accuracy scores both on training and testing data. Due to it's high computational complexity I could not yet have time to attempt its parameters tuning via GridSearch.
 
-Aslo, I was able to use my best performing model to determine the most important flight delay predictors. They turned out to be flight data (month, date and weekday, flight distance, flight number and operating carrier,as well as departure/arrival from certain airports. More information with some visuals is available in the Project presentation. An interesting fact is that the most powerful flight delay predictor among flight destinations is the airport of Newark, NJ and Chicago O'Hare airport among flight origins, respectedly.
+Aslo, I was able to use my best performing model to determine the most important flight delay predictors. They turned out to be flight data (month, date and weekday, flight distance, flight number and operating carrier,as well as departure/arrival from certain airports. More information with some visuals is available in the Project presentation. 
+
+An interesting fact is that the most powerful flight delay predictor among flight destinations is the airport of Newark, NJ and Chicago O'Hare airport among flight origins, respectedly.
 
 ### 7 Forward Feeding Neural Network Classifier ###
 
-Fitting a FFNN with two hidden layers of 128 and 64 neurons resulted in max classification accuracy (after an early stop at 17 epoch) of 0.66 and validation accuracy of 0.62. This is outperformed by the AdaBoost Classifier.
+Fitting a FFNN with two hidden layers of 128 and 64 neurons resulted in max classification accuracy (after an early stop at 17 epoch) of 0.68 and validation accuracy of 0.64. This is slightly outperformed by the AdaBoost Classifier.
 
 ### 8 Forward Feeding Neural Network Regressor ###
 
-
-
+As an attempts to forecast a delayed flight's delay duration I ran a FFNN Regressor model with 2 hidden layers of 512 and 256 neurons respectedly, employing an Early Stop regularization technique. This resulted in the model stopping at the epoch 7 with the best acheved Mean Squared Error of roughly 640. With a baseline prediction of a mean delay of around 40 minutes, this corresponds to rmse of 25, meaning that we could predict a delayed flight's actual delay length within +/- 25 minutes interval. Looking back at an average delay of 40 minutes - for that particular case we will be able to predict an interval of 15 to 65 minutes - which is quite far from satisfactory and leaves a lot of room for future improvements. 
 
 ## Conclusions ##
+
+
 
 ## Future Steps ##
 
